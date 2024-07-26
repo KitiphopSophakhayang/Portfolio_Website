@@ -290,6 +290,8 @@ nav ul li a:hover{
    
 }
 
+
+/* x */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -700,6 +702,7 @@ button:hover {
     font-size: 24px;
     cursor: pointer;
 }
+
 
 button {
     background-color: #7f533c;
