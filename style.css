@@ -1,0 +1,1328 @@
+body{
+    padding: 0;
+    margin: 0;
+    font: 1.5em sans-serif;
+    /* font-family: sans-serif; */
+    box-sizing: border-box;
+}
+
+html,body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 49, 114);
+    opacity: 0.9;
+    height: 90px;
+    position: fixed;
+    /* width: 100%; */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo{
+    color: #fff; 
+    font-size: 50px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight:600;
+}
+
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+nav ul li a:hover{
+  color: rgb(255, 153, 0);
+}
+
+
+
+.information{
+    display: flex;
+    justify-content: center;
+    padding-top: 15rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+
+.profile {
+    width: 500px;
+  }
+
+
+
+  
+  .box2 {
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+  }
+
+  .img_profile{
+    border-radius: 50px;
+    margin-left: -5rem;
+  }
+
+
+  .box_name{
+    margin-top: 5rem;
+    margin-left: -9rem;
+    font-size: 70px;
+}
+
+
+.hello{
+    font-weight: 900;
+    font-size:90px;
+}
+
+.name{
+    color: rgb(15, 48, 156);
+    font: bolder;
+    font-weight: bold;
+}
+
+.lastname{
+    font-weight:20px;
+}
+
+.info{
+    font-weight:100;
+    font-size:30px;
+    width: 140%;
+}
+
+
+
+.text_skills{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(15, 48, 156);
+    padding-top: 5rem;
+}
+
+
+.box_skills > div {
+    margin: 5rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skills_all{
+    border-radius: 50px;
+   
+    
+}
+
+.language, .framework, .databasek, .tool {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.language > div,
+.framework > div,
+.databasek > div,
+.tool > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.language > p,
+.framework > p,
+.databasek > p,
+.tool > p {
+    font-weight: bold;
+    text-align: center;   
+}
+
+
+.skills_all img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* workexprtience */
+
+.text_workexprtience{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(15, 48, 156);
+    
+}
+
+ .box_work1{
+    display: flex;
+    background-color: white;
+    width: 1200px;
+    height: 400px;
+    place-items: center; /* จัดวางกล่องที่กึ่งกลางทั้งแนวนอนและแนวตั้ง */
+    margin: 0 auto;
+    gap: 20px;
+ }
+
+ .box_work02{
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2rem;
+ }
+
+ .box_work03{
+    display: flex;
+    width: 400px;
+    height: 90px;
+ }
+
+ .box_work04{
+    width: 400px;
+    height: 40px;
+ }
+
+ .box_work05{
+    width: 400px;
+    height: 270px;
+ }
+
+
+ .text_web{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: -5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.uil-arrow-circle-right:hover {
+    transition: transform 0.3s; /* ทำให้การเปลี่ยนแปลงขนาดนุ่มนวล */
+    transform: scale(1.3);
+}
+
+/*----*/
+
+
+.nav_bottom{
+    display: grid;
+    background-color: rgb(0, 49, 114); 
+    margin-top: 9rem;
+    padding: 1rem;
+}
+
+.box_contace2{
+    text-align: center;
+    color: rgb(177, 177, 177);
+    font-size: 15px;
+
+}
+
+
+
+/******/
+
+/* .img_projact > img{
+   
+} */
+/***popup***/
+
+.popup {
+    display: none; /* ซ่อน popup */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 40%;
+   
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #7f533c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6b4732;
+}
+
+.left {
+    width: 100%; /* ให้ width เต็ม 100% */
+}
+
+.img_projact {
+    width: 100%; /* ให้ width เต็ม 100% */
+    margin-bottom: 10px; /* เพิ่ม margin ล่าง */
+}
+
+.img_projact_bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* ให้ width เต็ม 100% */
+}
+
+/*-----------ฺBoxGithub------------*/
+
+.box_github{
+    display: flex;
+    background-color: rgb(85, 20, 170);
+    margin-left: 1rem;
+    width: 210px; 
+    height: 50px;
+    border-radius: 1rem;
+}
+
+.box_github > img{
+    margin-top: -1px;
+}
+
+.box_github:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+.text_p_git2{ 
+    margin: 0 auto;
+}
+
+.text_p_git3{ 
+    margin-top: 6px;
+    margin-left: 1rem;
+}
+
+/*-----------------------*/
+
+
+
+
+.box_git_gmail{
+    display: flex;
+    padding-left: 40rem;
+}
+
+.button_git{
+    display: flex;
+    background-color: rgb(85, 20, 170);
+    margin-left: 30rem;
+    width: 180px;
+    border-radius: 1rem;
+}
+
+.text_p_git{
+    margin-left: 1rem;
+}
+
+.button_resume{
+    display: flex;
+    background-color: rgb(85, 20, 170);
+    margin-left: 1rem;
+    width: 180px;
+    border-radius: 1rem;
+}
+
+.button_git:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+.button_resume:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+/**เอฟเฟครูป**/
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    filter: brightness(0.7);
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    margin-top: 5rem;
+  }
+  
+
+
+  /*-----Responsive----*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+  @media only screen and (max-width: 1050px) {
+
+    nav ul{
+        position: absolute;
+        top: 65px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(0, 49, 114);
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li{
+        padding: 20px;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+     
+    .information{
+         display: grid;
+     }
+
+     .profile{
+        display: grid;
+     }
+
+     .img_profile{
+        margin: 0 auto;
+     }
+
+     .box2 > .box_name{
+        display: grid;
+        margin: 0 auto;
+     }
+
+     .hello{
+        margin: 0 auto;
+        padding-top: 2rem;
+     }
+   
+     .name{
+        margin: 0 auto;
+     }
+
+     .lastname{
+        margin: 0 auto;
+     }
+
+     .lastname2{
+        margin: 0 auto;
+     }
+
+     .info{
+        display: grid;
+        margin: 0 auto;
+        padding-top: 2rem;
+        width: 100%;
+     }
+
+     
+    .box_git_gmail{
+        display: grid;
+       
+    }
+
+    .box_git_gmail {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: center; /* จัดกึ่งกลางแนวนอน */
+        align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+        padding-left: 1rem;
+    }
+    
+    .button_git{
+        display: flex;
+        background-color: rgb(85, 20, 170);
+        margin-left: 1rem;
+        width: 180px;
+        border-radius: 1rem;
+    }
+    
+    .button_resume{
+        display: flex;
+        background-color: rgb(85, 20, 170);
+        margin-left: 1rem;
+        width: 180px;
+        border-radius: 1rem;
+    }
+
+    .skills_all{
+        border-radius: 50px;
+       
+        
+    }
+ 
+
+/**/
+
+    .box_skills > div {
+        margin: 5rem;
+        display: grid;
+        gap: 1rem;
+        flex: 1;
+        font-size: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .skills_all{
+        border-radius: 50px;
+    }
+    
+
+    
+    .language > div,
+    .framework > div,
+    .databasek > div,
+    .tool > div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; 
+    }
+
+    .language > p,
+    .framework > p,
+    .databasek > p,
+    .tool > p {
+        border: 2px solid rgb(85, 20, 170);;
+        border-radius: 8px;
+        padding: 5px;  
+        margin-right: 1rem;
+    }
+
+
+    /**/
+
+ 
+
+    .box_work1{
+        display: grid;
+        background-color: white;
+        width: 120px;
+        height: 120px;
+        justify-content: center;
+       
+        
+     }
+    
+     .box_work02{
+        margin: 0 auto;
+        width: 700px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 2rem;
+     }
+    
+     .box_work03{
+        display: flex;
+        width: 400px;
+        height: 90px;
+     }
+    
+     .box_work03 > p{
+        margin-left: 8rem;
+     }
+     
+
+     .box_work03 > i:first-of-type {
+       
+        margin-left: 5rem;
+    }
+
+    .box_work03 > i:last-of-type {
+        grid-column: 3; /* ไอคอนตัวสุดท้ายในคอลัมน์สุดท้าย */
+    }
+     
+     
+     .box_work04{
+        width: 800px;
+        height: 40px;
+     }
+
+     .box_work04 > svg{
+        width: 650px;
+     }
+     
+     .box_work05{
+        margin: 0 auto;
+        width: 700px;
+        height: 270px;
+     }
+
+     .text_web{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: -5px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .uil-arrow-circle-right:hover {
+        transition: transform 0.3s; /* ทำให้การเปลี่ยนแปลงขนาดนุ่มนวล */
+        transform: scale(1.3);
+    }
+    
+
+    /*------*/
+
+    
+.nav_bottom{
+    display: grid;
+    background-color: rgb(0, 49, 114); 
+    margin-top: 9rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.box_contace2{
+    text-align: center;
+    color: rgb(177, 177, 177);
+    font-size: 15px;
+
+}
+
+    /**/
+    .nav_bottom{
+        display: flex;
+        background-color: rgb(0, 49, 114);
+        margin-top: 5rem;    
+        height: 150px;
+        margin-top: 75rem;
+    }
+
+    /*popup*/
+
+.popup {
+    display: none; /* ซ่อน popup */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+   
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #7f533c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6b4732;
+}
+
+.left {
+    width: 100%; /* ให้ width เต็ม 100% */
+}
+
+.img_projact {
+    width: 100%; /* ให้ width เต็ม 100% */
+    margin-bottom: 10px; /* เพิ่ม margin ล่าง */
+}
+
+.img_projact_bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* ให้ width เต็ม 100% */
+}
+
+/*-----------ฺBoxGithub------------*/
+
+.box_github{
+    display: flex;
+    background-color: rgb(85, 20, 170);
+    margin-left: 1rem;
+    width: 210px; 
+    height: 50px;
+    border-radius: 1rem;
+}
+
+.box_github > img{
+    margin-top: -1px;
+}
+
+.box_github:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+.text_p_git2{ 
+    margin: 0 auto;
+}
+
+.text_p_git3{ 
+    margin-top: 6px;
+    margin-left: 1rem;
+}
+
+/*-----------------------*/
+
+.box_git_gmail{
+    display: flex;
+    padding-right: 30rem;
+}
+
+.button_git{
+    display: flex;
+    background-color: rgb(85, 20, 170);
+    margin-left: 30rem;
+    width: 180px;
+    border-radius: 1rem;
+}
+
+.text_p_git{
+    margin-left: 1rem;
+}
+
+.button_resume{
+    display: flex;
+    background-color: rgb(85, 20, 170);
+    margin-left: 1rem;
+    width: 180px;
+    border-radius: 1rem;
+}
+
+.button_git:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+.button_resume:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+/**เอฟเฟครูป**/
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    filter: brightness(0.7);
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    margin-top: 5rem;
+  }
+  
+    
+
+   }
+
+
+   /*----------------------------------------------responsiveMobile----------------------------------------------------------*/
+
+   @media only screen and (max-width: 500px) { 
+
+    .information{
+        display: grid;
+        justify-content: center;
+        padding-left: 8rem;
+    }
+    
+    
+    .img_profile{
+        border-radius: 50px;
+        margin: 0 auto;
+      }
+    
+   
+
+      .box2 {
+        justify-content: center;
+        width: 500px;
+        height: 500px;
+      }
+
+
+
+      .box_git_gmail{
+        display: flex;
+        width: 40%;
+        
+    }
+
+    
+    .text_skills{
+        display: grid;
+        margin-left: 16rem;
+    }
+
+
+  
+
+/**/
+    .skills_all {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .language, .framework, .databasek, .tool {
+        flex: 1 1 100%;
+    }
+
+    .box_skills {
+      
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .skills_all {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 500px;
+    }
+
+    .language > p,
+    .framework > p,
+    .databasek > p,
+    .tool > p {
+        border: 2px solid rgb(85, 20, 170);;
+        border-radius: 8px;
+        margin-right: 1rem;  
+        
+    }
+
+
+    /**/
+
+    .text_workexprtience{
+        display: grid;
+        margin-left: 16rem;
+        text-align: center;
+    }
+
+
+   
+    
+     .box_work1{
+        display: grid;
+        background-color: white;
+        margin-left: 17rem;
+     }
+
+     .box_work02{
+        width: 500px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 2rem;
+     }
+
+
+    .box_work03 > i:first-of-type {
+
+        margin-left: 1rem;
+    }
+     
+    .box_work03 > i:first-of-type {
+       
+        width: 20px;
+    }
+     
+     .box_work04{
+        width: 500px;
+        height: 40px;
+       
+     }
+
+     .box_work04 > svg{
+        width: 450px;
+     }
+     
+     .box_work05{
+        margin: 0 auto;
+        width: 500px;
+        height: 270px;
+     }
+
+     .text_web{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: -5px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .uil-arrow-circle-right:hover {
+        transition: transform 0.3s; /* ทำให้การเปลี่ยนแปลงขนาดนุ่มนวล */
+        transform: scale(1.3);
+    }
+    
+
+    /* 
+     */
+
+     .nav_bottom{
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        background-color: rgb(0, 49, 114); 
+        width: 155%;
+        margin-top: 75rem;
+    }
+    
+    .box_contace2{
+        width: 100%;
+        color: rgb(177, 177, 177);
+        font-size: 15px;
+        padding-top: 2rem;
+    }
+    
+     
+    .nav_bottom {
+        margin-top: 75rem; 
+        padding: 15px 0; 
+    }
+
+    .box_contace2 {
+        font-size: 13px; 
+    }
+
+    .p_nav_bottom1, .p_nav_bottom2 {
+        margin: 3px 0; 
+    }
+    
+
+    /*popup*/
+
+.popup {
+    display: none; /* ซ่อน popup */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+   
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #7f533c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6b4732;
+}
+
+.left {
+    width: 100%; /* ให้ width เต็ม 100% */
+}
+
+.img_projact {
+    width: 100%; /* ให้ width เต็ม 100% */
+    margin-bottom: 10px; /* เพิ่ม margin ล่าง */
+}
+
+.img_projact_bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* ให้ width เต็ม 100% */
+}
+
+/*-----------ฺBoxGithub------------*/
+
+.box_github{
+    display: flex;
+    background-color: rgb(85, 20, 170);
+    margin-left: 1rem;
+    width: 210px; 
+    height: 50px;
+    border-radius: 1rem;
+}
+
+.box_github > img{
+    margin-top: -1px;
+}
+
+.box_github:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+.text_p_git2{ 
+    margin: 0 auto;
+}
+
+.text_p_git3{ 
+    margin-top: 6px;
+    margin-left: 1rem;
+}
+
+/*-----------------------*/
+
+
+.button_git{
+    display: flex;
+    background-color: rgb(85, 20, 170);
+    margin-left: 30rem;
+    width: 180px;
+    border-radius: 1rem;
+}
+
+.text_p_git{
+    margin-left: 1rem;
+}
+
+.button_resume{
+    display: flex;
+    background-color: rgb(85, 20, 170);
+    margin-left: 1rem;
+    width: 180px;
+    border-radius: 1rem;
+}
+
+.button_git:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+.button_resume:hover{
+    background-color: rgb(255, 153, 0);
+}
+
+/**เอฟเฟครูป**/
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    filter: brightness(0.7);
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    margin-top: 5rem;
+  }
+
+}
+
+
+
+
+@media (min-width: 1055px) and (max-width: 1510px) {
+    .info{
+        font-weight:100;
+        font-size:30px;
+        width: 100%;
+    }
+
+    
+    .box_name{
+        display: grid;
+        margin-top: 5rem;
+        margin-left: -9rem;
+        font-size: 70px;
+    }
+
+    /*----*/
+    .box_git_gmail{
+        display: flex;
+        padding-top: 8rem;
+        padding-left: 35rem;
+    }
+    
+    .button_git{
+        display: flex;
+        background-color: rgb(85, 20, 170);
+        margin-left: 30rem;
+        width: 180px;
+        border-radius: 1rem;
+    }
+    
+    .text_p_git{
+        margin-left: 1rem;
+    }
+    
+    .button_resume{
+        display: flex;
+        background-color: rgb(85, 20, 170);
+        margin-left: 1rem;
+        width: 180px;
+        border-radius: 1rem;
+    }
+    
+    .button_git:hover{
+        background-color: rgb(255, 153, 0);
+    }
+    
+    .button_resume:hover{
+        background-color: rgb(255, 153, 0);
+    }
+
+    }
+
+
+    
+/*--แท็บเลท--ไอแพด---*/
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .box_work04{
+            width: 100px;
+            height: 40px;
+         }
+    }
+
+
+    @media (min-width: 712px) and (max-width: 1138px) {
+        .box_work04{
+            width: 400px;
+            height: 40px;
+         }
+  
+         .box_work04 > svg{
+            width: 550px;
+         }
+
+         .box_work02{
+            width: 600px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 2rem;
+         }
+        
+         .box_work03{
+            display: flex;
+            width: 400px;
+            height: 90px;
+         }
+        
+         .box_work05{
+            width: 500px;
+            height: 270px;
+         }   
+    }
+
+
+
+
+    /* @media only screen and (max-width: 390px) { */
+    @media only screen and (min-width: 360px) and (max-width: 414px) {
+
+        .nav_bottom{
+            margin: 0 auto;
+            justify-content: center;
+            display: flex;
+            background-color: rgb(0, 49, 114); 
+            width: 170%;
+            margin-top: 75rem;
+        }
+        
+        .box_contace2{
+            width: 100%;
+            color: rgb(177, 177, 177);
+            font-size: 15px;
+            padding-top: 2rem;
+        }
+
+
+        
+        
+      }
+
+
+
+    
+
+      /* @media only screen and (max-width: 360px) { */
+      @media only screen and (min-width: 360px) and (max-width: 375px) {
+        
+        .img_profile{
+            border-radius: 50px;
+            margin-left: 4rem;
+          }
+        
+        .nav_bottom{
+            margin: 0 auto;
+            justify-content: center;
+            display: flex;
+            background-color: rgb(0, 49, 114); 
+            width: 180%;
+            margin-top: 75rem;
+        }
+        
+        .box_contace2{
+            width: 100%;
+            color: rgb(177, 177, 177);
+            font-size: 15px;
+            padding-top: 2rem;
+        }
+
+        .nav_bottom {
+            margin-top: 75rem; 
+            padding: 15px 0; 
+        }
+    
+        .box_contace2 {
+            font-size: 13px; 
+        }
+    
+        .p_nav_bottom1, .p_nav_bottom2 {
+            margin: 3px 0; 
+        }
+        
+      }
