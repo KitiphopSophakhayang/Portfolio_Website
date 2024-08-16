@@ -10,8 +10,6 @@ document.getElementById('resume-button').addEventListener('click', function() {
 /*------------------------------------*/
 
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const popup = document.getElementById('popup');
     const popup_Internship = document.getElementById('popup_Internship');
